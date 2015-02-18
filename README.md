@@ -16,7 +16,7 @@ $python synchronize restart
 O parâmetro numérico após o "start" indica o intervalo em segundos a cada sincronização.
 Para o correto funcionamento, é requerido que as seguintes tabelas tenham sido criadas nos dois bancos:
 
-mymodel: Armazena dados genéricos com a coluna ID como chave primária.
+mymodel: Armazena dados genéricos com a coluna ID como chave primária.\n
 mymodelactivity: Armazena um log de alterações efetuadas em mymodel, salvando ID, tipo de alteração (inclusão, atualização) e data/hora.
 
 No banco Cassandra, estas tabelas podem ser criadas via cqlsh, usando os comandos abaixo:
