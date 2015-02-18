@@ -1,8 +1,8 @@
 # cassandra-elasticsearch
 Sincroniza dados entre os bancos Cassandra e ElasticSearch
 
-Esta rotina sincroniza dados entre os bancos noSQL Cassandra e ElasticSearch.
-deve ser executada como um processo daemon e pode ser iniciada a partir do terminal:
+Esta rotina sincroniza dados entre os bancos noSQL, Cassandra e ElasticSearch.
+Deve ser executada como um processo daemon e pode ser iniciada a partir do terminal:
 
 Para executar:
 $python synchronize start 60
@@ -16,7 +16,7 @@ $python synchronize restart
 O parâmetro numérico após o "start" indica o intervalo em segundos a cada sincronização.
 Para o correto funcionamento, é requerido que as seguintes tabelas tenham sido criadas nos dois bancos:
 
-mymodel: Armazena dados genéricos com a coluna ID como chave primária
+mymodel: Armazena dados genéricos com a coluna ID como chave primária.
 mymodelactivity: Armazena um log de alterações efetuadas em mymodel, salvando ID, tipo de alteração (inclusão, atualização) e data/hora.
 
 No banco Cassandra, estas tabelas podem ser criadas via cqlsh, usando os comandos abaixo:
