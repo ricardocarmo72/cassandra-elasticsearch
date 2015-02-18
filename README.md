@@ -5,13 +5,13 @@ Esta rotina sincroniza dados entre os bancos noSQL, Cassandra e ElasticSearch.
 Deve ser executada como um processo daemon e pode ser iniciada a partir do terminal:
 
 Para executar:
-$python synchronize start 60
+$python synchronize.py start 60
 
 Para interromper:
-$python synchronize stop
+$python synchronize.py stop
 
 Para reiniciar:
-$python synchronize restart
+$python synchronize.py restart
 
 O parâmetro numérico após o "start" indica o intervalo em segundos a cada sincronização.
 Para o correto funcionamento, é requerido que as seguintes tabelas tenham sido criadas nos dois bancos:
